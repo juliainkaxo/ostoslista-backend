@@ -2,6 +2,8 @@
 require_once 'inc/function.php';
 require_once 'inc/headers.php';
 
+//jostain syystä laittaa 0, ellei tämä allaoleva ole toistamiseen omanaan add.php:ssa.
+// Mikäli toimii sinulla eri tavalla, niin tää on se kohta mikä lisätty ettei tulosta joka add kerralla lisäksi nollaa.
 if ($_SERVER['REQUEST_METHOD']=== 'OPTIONS') {
     return 0;
 }
